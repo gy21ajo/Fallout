@@ -50,4 +50,4 @@ Testing was completed using a number of methods:
 
 ## Issues and Future Development 
 1) Boundary Conditions - This model uses a 'donut approach' where once particles leave the edge of the boundary they simply appear on the otherside, implemented by using  % len(self.environment[0]) in the x direction and % len(self.environment[0]). Ideally, I wanted to implement a 2D array based on the final resting locations of the particles, removing the boundary issues. I thought about implementing this by calculating the total distance travelled in both y and x directions for each particles in comparrison with the bombing point, and then using the max of these in the nrows and ncols when creating my array. However in order to write to my model the array is created before the loop which moves the agent so I was unable to complete this. 
-2) The starting value on the slider on the GIU
+2) The starting value on the slider on the GIU is 0.0, however the minimum value of this is 1.0
