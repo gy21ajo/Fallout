@@ -1,11 +1,16 @@
-## Fallout
+## Fallout V1.0
+#Author Adam Odell
+
+This is a model simulating the distribution of toxic particles released at the top of a building and where they land according to wind direction. A GUI allows users to change the height of the building, the number of bacteria and the wind direction (from a drop down menu). The results are plotted as a density map on the graph, written to a text file containing a 2D array which shows the density and a file containing the final coordinates. 
 
 ##  Licensing 
+This programme is lincensed under a MIT Licnense. More information is available in the license.txt file. 
+
 
 ## Files 
 'Fallout.py' - This file runs the model, writes the files and creates the GUI
 'Particle_framework' - This model contains the Particle class. This contains functions to create a string, to move the particles with a combination of wind direction and randomly, and change the height of the particles randomly and in relation to the building height. 
-'Wind.txt' - This fil e is read by the code and determines the location of the bombing point
+'Wind.txt' - This file is read by the code and determines the location of the bombing point
 
 ## Run the Model
 1) Download all the files into the same direcotry. 
