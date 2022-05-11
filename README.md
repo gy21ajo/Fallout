@@ -1,5 +1,5 @@
 ## Fallout V1.0
-#Author Adam Odell
+#Author Adam Odell 11/05/2022.
 
 This is a model simulating the distribution of toxic particles released at the top of a building and where they land according to wind direction. A GUI allows users to change the height of the building, the number of bacteria and the wind direction (from a drop down menu). The results are plotted as a density map on the graph, written to a text file containing a 2D array which shows the density and a file containing the final coordinates. 
 
@@ -46,7 +46,7 @@ Testing was completed using a number of methods:
   else:
     print(...)
  Does not allow the run command to continue and returns a message to the GUI informing the user to input a value in the correct range 
-6) At the end of the programme the runtime is calculated and displayed on screen. This was use when attempting to make the programme more effecient. 
+6) At the end of the programme the runtime is calculated and displayed on screen. This was use when attempting to make the programme more effecient.
 
 ## Issues and Future Development 
 1) Boundary Conditions - This model uses a 'donut approach' where once particles leave the edge of the boundary they simply appear on the otherside, implemented by using  % len(self.environment[0]) in the x direction and % len(self.environment[0]). Ideally, I wanted to implement a 2D array based on the final resting locations of the particles, removing the boundary issues. I thought about implementing this by calculating the total distance travelled in both y and x directions for each particles in comparrison with the bombing point, and then using the max of these in the nrows and ncols when creating my array. However in order to write to my model the array is created before the loop which moves the agent so I was unable to complete this. 
